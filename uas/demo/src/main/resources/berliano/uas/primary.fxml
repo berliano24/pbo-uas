@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFDE4D;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="berliano.uas.controller.mainviewcontroller">
+   <children>
+      <Label layoutX="239.0" layoutY="91.0" text="BERCO TRAVEL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="126.0" text="Best Way To Enjoy Your Trip" />
+      <MenuBar layoutX="248.0" layoutY="186.0" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: pink;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Data Tiket">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleDataPerjalanan" text="Data Tiket" />
+              <MenuItem mnemonicParsing="false" onAction="#handleBooking" text="Pesan Tiket" />
+              <MenuItem mnemonicParsing="false" onAction="#handleTicketManagement" text="Manajemen Tiket" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
